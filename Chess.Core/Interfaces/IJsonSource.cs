@@ -6,6 +6,6 @@ namespace Chess.Core.Interfaces
 {
     public interface IJsonSource
     {
-
+        string GetMovementsFromSource();
     }
 }
