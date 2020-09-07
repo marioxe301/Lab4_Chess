@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Chess.Core\Chess.Core.csproj" />
+    <ProjectReference Include="..\Chess.Infrastructure\Chess.Infrastructure.csproj" />
+  </ItemGroup>
 </Project>

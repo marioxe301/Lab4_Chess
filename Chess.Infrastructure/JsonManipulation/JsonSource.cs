@@ -10,7 +10,7 @@ namespace Chess.Infrastructure.JsonManipulation
     {
         public string GetMovementsFromSource()
         {
-            return File.ReadAllText("policy.json");
+            return File.ReadAllText("movements.json");
         }
     }
 }

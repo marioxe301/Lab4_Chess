@@ -1,4 +1,7 @@
 ﻿using System;
+using Chess.Core;
+using Chess.Core.Interfaces;
+using Chess.Infrastructure.JsonManipulation;
 
 namespace Chess.Console
 {
@@ -6,19 +9,11 @@ namespace Chess.Console
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Hello world");
-            /*
-             * 
-            this is the idea i want to implement in main method - jufergom
-            var logger = new FileLogger();  dont know if necesarry
-
+            System.Console.WriteLine("Validating moves...");
             var engine = new ChessEngine(
-                logger,
                 new JsonSource(),
                 new JsonParser());
-
-            engine.validateMoves();
-             */
+            engine.ValidateMoves();
         }
     }
 }
