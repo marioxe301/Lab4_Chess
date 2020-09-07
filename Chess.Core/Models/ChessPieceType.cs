@@ -6,8 +6,9 @@ namespace Chess.Core.Models
 {
     public enum ChessPieceType
     {
-        horse,
-        pawn,
-        tower
+        Horse,
+        Pawn,
+        Rook,
+        None
     }
 }

@@ -11,4 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Chess.Core\Chess.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XYConverter\" />
+  </ItemGroup>
 </Project>

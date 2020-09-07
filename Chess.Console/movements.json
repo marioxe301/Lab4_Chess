@@ -1,17 +1,17 @@
 ﻿[
   {
     "type": 1,
-    "to": "A1",
-    "from": "D3"
+    "to": "a1",
+    "from": "d3"
   },
   {
     "type": 2,
-    "to": "G2",
-    "from": "F5"
+    "to": "g2",
+    "from": "f5"
   },
   {
     "type": 0,
-    "to": "H7",
-    "from": "G5"
+    "to": "h7",
+    "from": "g5"
   }
 ]
