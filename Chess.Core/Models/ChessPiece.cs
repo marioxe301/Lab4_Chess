@@ -10,5 +10,7 @@ namespace Chess.Core.Models
         public string to { get; set; }
 
         public string from { get; set; }
+
+        
     }
 }
