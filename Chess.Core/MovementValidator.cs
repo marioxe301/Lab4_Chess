@@ -8,10 +8,10 @@ namespace Chess.Core
     public class MovementValidator
     {
         private readonly ChessPieceType[,] table;
-        private List<ChessPiece> _movements;
+        //private List<ChessPiece> _movements;
         private IXYConverter _converter;
 
-        public MovementValidator(List<ChessPiece> movements, IXYConverter converter)
+        public MovementValidator(IXYConverter converter)
         {
             table = new ChessPieceType[8, 8] {{ ChessPieceType.None, ChessPieceType.None,
                 ChessPieceType.None, ChessPieceType.None, ChessPieceType.None, ChessPieceType.None,
@@ -30,13 +30,13 @@ namespace Chess.Core
                 ChessPieceType.None, ChessPieceType.None },{ ChessPieceType.None, ChessPieceType.None,
                 ChessPieceType.None, ChessPieceType.None, ChessPieceType.None, ChessPieceType.None,
                 ChessPieceType.None, ChessPieceType.None },};
-            _movements = movements;
+            //_movements = movements;
             _converter = converter;
         }
 
-        public void checkMove()
+        public void checkMoves(List<ChessPiece> movements)
         {
-            _movements.ForEach(piece =>
+            movements.ForEach(piece =>
             {
                 //convert movement format to coordinates
                 int x1 = _converter.CharToCoordinate(piece.from[0]);
