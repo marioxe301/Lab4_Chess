@@ -1,6 +1,5 @@
 ﻿using System;
 using Chess.Core;
-using Chess.Core.Interfaces;
 using Chess.Infrastructure.JsonManipulation;
 using Chess.Infrastructure.XYConverter;
 

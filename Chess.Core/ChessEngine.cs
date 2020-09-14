@@ -25,5 +25,12 @@ namespace Chess.Core
             _validator.checkMoves(movements); //receives movement list
             //internamente el validator tiene la tabla y revisa si los movimientos son validos
         }
+
+        public bool ValidateMove(int index)
+        {
+            var movementsJson = _movementsSource.GetMovementsFromSource();
+            var movements = _movementsParser.SerializeChessPieces(movementsJson);
+            return _validator.checkMove(movements, index); //receives movement list
+        }
     }
 }
